@@ -1,0 +1,14 @@
+name = "terabox-downloader-bot"
+compatibility_date = "2024-03-01"
+main = "functions/bot.js"
+
+[build]
+upload_dir = "public"
+command = "npm install"
+
+[build.upload]
+format = "service-worker"
+
+[vars]
+BOT_TOKEN = "your_telegram_bot_token"
+WORKER_DOMAIN = "your-domain.pages.dev"
